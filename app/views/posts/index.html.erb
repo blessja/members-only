@@ -1,0 +1,16 @@
+<section>
+  <div class="container">
+    <div class="columns">
+    <% if member_signed_in? %>
+        <%= render 'profile' %>
+     <% else %>
+      <%= render 'trends' %>
+     <% end %>
+        
+     <%= render 'feed' %>
+     <%= render 'members-to-follow'%>
+    </div>
+  </div>
+</section>
+
+
